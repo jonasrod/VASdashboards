@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>VAS Dashboards</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <button ion-item *ngFor="let dashboard of dashboards">
+      {{dashboard.title}}
+      <div class="item-note" item-end>
+        {{dashboard.description}}
+      </div>
+    </button>
+  </ion-list>
+</ion-content>
